@@ -29,4 +29,13 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
 #
 # ------------------------------- Other ends -------------------------------
+#下载N2N
+git clone https://github.com/coolsnowwolf/packages lean/packages
+cp -Rf lean/packages/net/n2n ./feeds/packages/net/n2n
+
+git clone https://github.com/coolsnowwolf/luci lean/luci
+cp -Rf lean/luci/applications/luci-app-n2n ./feeds/luci/applications/luci-app-n2n
+
+rm -rf lean
+./scripts/feeds update -a
 
