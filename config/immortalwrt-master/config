@@ -194,3 +194,5 @@ CONFIG_PACKAGE_odhcpd-ipv6only=y
 CONFIG_PACKAGE_iptables-mod-nat-extra=y
 CONFIG_PACKAGE_libnl-tiny=y
 CONFIG_PACKAGE_uclient-fetch=y
+CONFIG_DEFAULT_luci-proto-ipv6=y
+
